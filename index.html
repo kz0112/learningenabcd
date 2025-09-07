@@ -334,17 +334,13 @@ const curriculum = {
     Есіңде сақта!
     Ағылшын тілінде сәлемдесу – мәдениеттің маңызды бөлігі. Әңгіме бастау үшін міндетті түрде «Hello» немесе «How are you?» деген сөздер айтылады. Тіпті қысқа жауап болса да, әрдайым жылы сөз қайтару керек.
   `,
-  quiz:{
-    q:"Сәлемдесу тақырыбы бойынша тест:",
-    choices:[
-      "«Good morning» — Қайырлы таң",
-      "«Nice to meet you» — Көргеніме қуаныштымын",
-      "«Hello» — Сау бол",
-      "«How are you?» — Сенің атың кім?",
-      "«Good night» — Қайырлы түн"
-    ],
-    a:[0,1,4]
-  }},
+  quiz:[
+    { q:"«Good morning» қазақша қалай?", choices:["Қайырлы кеш","Қайырлы таң","Сәлем"], a:1 },
+    { q:"«Nice to meet you» деген не?", choices:["Сау бол","Көргеніме қуаныштымын","Қайырлы түн"], a:1 },
+    { q:"«How are you?» қандай сұрақ?", choices:["Сенің атың кім?","Қалың қалай?","Қайда барасың?"], a:1 },
+    { q:"«Good night» қашан айтылады?", choices:["Таңертең","Ұйықтауға барарда","Кешкі амандасуда"], a:1 },
+    { q:"«Hello» сөзі қалай аударылады?", choices:["Сәлем","Сау бол","Қайырлы күн"], a:0 }
+  ]},
 
     { 
       id:"5-2", 
@@ -383,16 +379,13 @@ const curriculum = {
     - 13 (thirteen) мен 30 (thirty) ұқсас естіледі, бірақ екпіндері әртүрлі.
     - 15 (fifteen), 50 (fifty) де шатастыруға оңай. Айтылуына мұқият бол.
   `,
-      quiz:{
-        q:"Сандарға байланысты сұрақтар:",
-        choices:[
-          "Seven – жеті",
-          "Twelve – он бес",
-          "Forty – қырық",
-          "One hundred – мың"
-        ],
-        a:0
-      }
+  quiz:[
+    { q:"Seven қандай сан?", choices:["Жеті","Он екі","Төрт","Тоғыз"], a:0 },
+    { q:"«Forty» қазақша қалай?", choices:["Отыз","Қырық","Елу","Жүз"], a:1 },
+    { q:"«Тwelve» қай сан?", choices:["12","20","10","22"], a:0 },
+    { q:"«Ninety» қайсы?", choices:["19","90","99","9"], a:1 },
+    { q:"«One hundred» қазақшасы?", choices:["Жүз","Мың","Он","Бір"], a:0 }
+  ] 
     },
 
     { 
@@ -420,16 +413,13 @@ const curriculum = {
 
     Жаттығу: суретке қарап заттың орнын сипатта.
   `,
-      quiz:{
-        q:"Prepositions бойынша дұрыс сөйлемді таңда:",
-        choices:[
-          "The cat is in the chair.",
-          "The ball is under the box.",
-          "The book is on the table.",
-          "The park is next to the table."
-        ],
-        a:2
-      }
+  quiz:[
+    { q:"The book is ___ the table.", choices:["in","on","under","next to"], a:1 },
+    { q:"The cat is ___ the chair.", choices:["under","on","between","in front of"], a:0 },
+    { q:"The school is ___ the park.", choices:["behind","next to","under","in"], a:1 },
+    { q:"Доп қораптың ішінде. Дұрыс сөйлем?", choices:["The ball is on the box.","The ball is in the box.","The ball is under the box.","The ball is next to the box."], a:1 },
+    { q:"The dog is ___ the car.", choices:["in","under","behind","on"], a:2 }
+  ]
     },
 
     { 
@@ -464,16 +454,14 @@ mine (менікі), yours (сенікі), his (оның), hers (оның – ә
 2) Досыңнан сұра: "Is this yours?"
 3) Сыныптағы заттарды бөліп ал: "This desk is ours."
 `,
-      quiz:{
-        q:"Possessive бойынша дұрыс нұсқаны таңда:",
-        choices:[
-          "This is my book. It is mine.",
-          "This is his book. It is you.",
-          "This is her bag. It is ours.",
-          "This is your pen. It is theirs."
-        ],
-        a:0
-      }
+quiz:[
+  { q:"«This is ___ book. It is mine.»", choices:["my","mine","me"], a:0 },
+  { q:"«The red bag is ___.» (оның – әйел)", choices:["hers","her","she"], a:0 },
+  { q:"«This is our school. It is ___.»", choices:["ours","us","we"], a:0 },
+  { q:"«That is his pen. It is ___.»", choices:["his","him","he"], a:0 },
+  { q:"«These toys are ___.» (олардікі)", choices:["theirs","them","their"], a:0 }
+]
+
     },
 
     { 
@@ -512,11 +500,14 @@ Questions (сұрақтар):
 2) Досыңнан сұрақ қой: "Are you happy?" – "Yes, I am."
 3) Болымсыз сөйлемдер жаса: "I am not sleepy."
 `,
-      quiz:{
-        q:"'She ___ a teacher.' дұрыс нұсқа",
-        choices:["is","are","am"],
-        a:0
-      }
+quiz:[
+  { q:"'I ___ a student.'", choices:["am","is","are"], a:0 },
+  { q:"'They ___ happy.'", choices:["is","are","am"], a:1 },
+  { q:"'She ___ not at home.'", choices:["are","am","is"], a:2 },
+  { q:"'___ you ready?' (сұрақ)", choices:["Am","Are","Is"], a:1 },
+  { q:"'Yes, she ___ / No, she isn’t.'", choices:["are","is","am"], a:1 }
+]
+
     },
 
     { 
@@ -550,11 +541,14 @@ Sunday – жексенбі
 2) Досыңа сұрақ қой: "What day is it today?"
 3) Өткен күнді сипатта: "Yesterday was …"
 `,
-      quiz:{
-        q:"«Thursday» қазақша қай күн?",
-        choices:["Сәрсенбі","Бейсенбі","Жұма"],
-        a:1
-      }
+quiz:[
+  { q:"«Friday» қай күн?", choices:["Жұма","Сенбі","Дүйсенбі"], a:0 },
+  { q:"«Sunday» қазақша?", choices:["Жексенбі","Сәрсенбі","Бейсенбі"], a:0 },
+  { q:"«Tomorrow is ___» (егер бүгін Monday болса)", choices:["Tuesday","Wednesday","Sunday"], a:0 },
+  { q:"«Yesterday was ___» (егер бүгін Thursday болса)", choices:["Friday","Wednesday","Tuesday"], a:1 },
+  { q:"«Saturday» сөзі дұрыс аударылған нұсқа?", choices:["Жұма","Сенбі","Жексенбі"], a:1 }
+]
+
     },
 
     { 
@@ -592,11 +586,14 @@ Language – тіл (Kazakh, Russian).
 2) Басқа елдің адамы туралы сөйлем құрастыр.
 3) Сыныптастарыңнан сұрақ қой: "Where are you from?"
 `,
-      quiz:{
-        q:"'I am from France. I am ___.'",
-        choices:["French","France","Franch"],
-        a:0
-      }
+quiz:[
+  { q:"'He is from England. He is ___.'", choices:["English","England","Englander"], a:0 },
+  { q:"'They are from China. They are ___.'", choices:["Chinas","Chinese","Chinees"], a:1 },
+  { q:"'I am from Kazakhstan. I am ___.'", choices:["Kazakh","Kazakhstan","Kazakhs"], a:0 },
+  { q:"'She is from France. She speaks ___.'", choices:["French","France","Franch"], a:0 },
+  { q:"'Russia – ___'", choices:["Russian","Russia","Russ"], a:0 }
+]
+
     },
 
     { 
@@ -628,11 +625,14 @@ Language – тіл (Kazakh, Russian).
 2) Сыныптасыңа сұрақ қой: "Do you watch TV every day?"
 3) Үшінші жақта сөйлем жаз: "He goes to school at 8."
 `,
-      quiz:{
-        q:"He ___ basketball every weekend.",
-        choices:["plays","play","playing"],
-        a:0
-      }
+quiz:[
+  { q:"'He ___ football every Sunday.'", choices:["play","plays","playing"], a:1 },
+  { q:"'I ___ TV every evening.'", choices:["watch","watches","watched"], a:0 },
+  { q:"'She ___ not like apples.'", choices:["does","do","doesn’t"], a:2 },
+  { q:"'Do you ___ books?'", choices:["read","reads","reading"], a:0 },
+  { q:"'Does she ___ to school at 8?'", choices:["go","goes","going"], a:0 }
+]
+
     },
 
     { 
@@ -662,11 +662,14 @@ There were – көпше заттарға қолданылады.
 2) Заттарды сана: "There were five books on the desk."
 3) Сұрақ құрастыр: "Was he at home yesterday?"
 `,
-      quiz:{
-        q:"'There ___ two dogs.' дұрыс нұсқа",
-        choices:["were","was","is"],
-        a:0
-      }
+quiz:[
+  { q:"'I ___ at home yesterday.'", choices:["was","were","am"], a:0 },
+  { q:"'They ___ tired last night.'", choices:["were","was","are"], a:0 },
+  { q:"'There ___ a cat in the room.'", choices:["was","were","is"], a:0 },
+  { q:"'There ___ two books on the desk.'", choices:["was","were","are"], a:1 },
+  { q:"'She ___ not happy yesterday.'", choices:["was","were","is"], a:0 }
+]
+
     }, { 
   id:"5-10", 
   title:"A description of an animal", 
@@ -691,11 +694,14 @@ There were – көпше заттарға қолданылады.
 2) Досыңнан сұра: “What is your favourite animal?”
 3) Сыныпта 5 жануардың сипаттамасын жаз.
   `,
-  quiz:{
-    q:"«A rabbit is ___ and fast.»",
-    choices:["big","small","slow"],
-    a:1
-  }
+  quiz:[
+  { q:"«A tiger is ___ and strong.»", choices:["small","big","slow"], a:1 },
+  { q:"«A rabbit is small and ___.»", choices:["slow","fast","big"], a:1 },
+  { q:"«A dolphin can ___ fast.»", choices:["run","swim","fly"], a:1 },
+  { q:"«A dog has a long ___.»", choices:["tail","tooth","ear"], a:0 },
+  { q:"«A lion has sharp ___.»", choices:["teeth","legs","ears"], a:0 }
+]
+
 },
 
 { 
@@ -723,11 +729,14 @@ Friends – достар:
 2) Досың туралы сөйлем жаз: “My friend is …”
 3) Суретке қарап отбасы мүшелерін ата.
   `,
-  quiz:{
-    q:"«Uncle» қазақша қалай аударылады?",
-    choices:["Аға/көке","Тәте","Ата"],
-    a:0
-  }
+  quiz:[
+  { q:"«Father» қазақша?", choices:["Ата","Әке","Аға"], a:1 },
+  { q:"«Grandmother» кім?", choices:["Әже","Ата","Тәте"], a:0 },
+  { q:"«Best friend» деген?", choices:["Жақсы көрші","Ең жақсы дос","Сыныптас"], a:1 },
+  { q:"«Uncle» дұрыс аудармасы?", choices:["Тәте","Аға/көке","Әпке"], a:1 },
+  { q:"«Neighbour» қазақша?", choices:["Көрші","Дос","Ағайын"], a:0 }
+]
+
 },
 
 { 
@@ -756,11 +765,14 @@ Superlatives – ең жоғарғы дәрежені көрсету үшін:
 2) Ең жақсы/үлкен/жақсы затты сипатта.
 3) 5 comparative, 5 superlative мысал жаз.
   `,
-  quiz:{
-    q:"«Good – ___ – the best»",
-    choices:["gooder","better","bestest"],
-    a:1
-  }
+  quiz:[
+  { q:"'Tall – ___ – the tallest'", choices:["taller","more tall","tallest"], a:0 },
+  { q:"'Small – smaller – the ___'", choices:["smallest","smaller","more small"], a:0 },
+  { q:"'Good – better – the ___'", choices:["best","goodest","better"], a:0 },
+  { q:"'Bad – worse – the ___'", choices:["worst","badder","worsest"], a:0 },
+  { q:"«My car is ___ than yours.»", choices:["fast","faster","fastest"], a:1 }
+]
+
 },
 
 { 
@@ -791,11 +803,14 @@ Present Continuous – дәл қазір болып жатқан әрекетт�
 2) Суретке қарап сөйлем құрастыр.
 3) Сұрақ қой: “What are you doing?”
   `,
-  quiz:{
-    q:"«She ___ reading a book now.»",
-    choices:["is","are","am"],
-    a:0
-  }
+  quiz:[
+  { q:"'She ___ reading a book now.'", choices:["is","are","am"], a:0 },
+  { q:"'They ___ playing football.'", choices:["is","are","am"], a:1 },
+  { q:"'I ___ not sleeping.'", choices:["am","is","are"], a:0 },
+  { q:"'___ you studying?' (сұрақ)", choices:["Are","Is","Am"], a:0 },
+  { q:"'What ___ she doing?' (қазір)", choices:["is","are","does"], a:0 }
+]
+
 },
 
 { 
@@ -820,11 +835,14 @@ Service jobs (қызмет көрсету жұмыстары):
 2) “My dream job is …” сөйлемін толықтыр.
 3) Мамандықтарды бөліп жаз: outdoor / service.
   `,
-  quiz:{
-    q:"«Teacher» сөзі қазақша?",
-    choices:["Мұғалім","Дәрігер","Сатушы"],
-    a:0
-  }
+  quiz:[
+  { q:"«Farmer» қазақша?", choices:["Шаруа","Құрылысшы","Жүргізуші"], a:0 },
+  { q:"«Doctor» кім?", choices:["Мұғалім","Дәрігер","Даяшы"], a:1 },
+  { q:"«Driver» сөзінің аудармасы?", choices:["Сатушы","Жүргізуші","Құрылысшы"], a:1 },
+  { q:"«Waiter» кім?", choices:["Даяшы","Әнші","Мұғалім"], a:0 },
+  { q:"«Shop assistant» қазақша?", choices:["Даяшы","Сатушы","Қызметкер"], a:1 }
+]
+
 },
 
 { 
@@ -847,11 +865,14 @@ me (мені), you (сені), him (оны – ер), her (оны – әйел),
 2) Досыңды сипатта: “Do you like him/her?”
 3) Object pronouns қолдана отырып, 5 сөйлем жаз.
   `,
-  quiz:{
-    q:"«I know ___» (оны – ер)",
-    choices:["he","him","his"],
-    a:1
-  }
+  quiz:[
+  { q:"«I know ___» (оны – ер)", choices:["he","him","his"], a:1 },
+  { q:"«She likes ___» (мені)", choices:["me","mine","I"], a:0 },
+  { q:"«They see ___» (бізді)", choices:["we","us","our"], a:1 },
+  { q:"«We love ___» (оларды)", choices:["their","they","them"], a:2 },
+  { q:"«Do you know ___?» (оны – әйел)", choices:["her","hers","she"], a:0 }
+]
+
 },
 
 { 
@@ -875,11 +896,14 @@ Design and Technology – заттарды жасау, құрастыру, қо�
 2) «Robot» сөзімен сөйлем құр.
 3) «Build» етістігін қолдан.
   `,
-  quiz:{
-    q:"«Robot» сөзі қазақша?",
-    choices:["Робот","Машина","Құрал"],
-    a:0
-  }
+  quiz:[
+  { q:"«Design» сөзі?", choices:["Жобалау","Құрал","Робот"], a:0 },
+  { q:"«Build» деген?", choices:["Құрастыру","Ойлап табу","Сурет салу"], a:0 },
+  { q:"«Invent» аудармасы?", choices:["Ойлап табу","Жасау","Сатып алу"], a:0 },
+  { q:"«Robot» сөзі қазақша?", choices:["Робот","Машина","Құрал"], a:0 },
+  { q:"«Tool» деген не?", choices:["Құрал","Робот","Жоба"], a:0 }
+]
+
 },
 
 { 
@@ -902,11 +926,14 @@ Design and Technology – заттарды жасау, құрастыру, қо�
 2) Досыңнан сұра: “Do you like …?”
 3) «Play/go/do» ережесін қолдан: play football, go swimming, do karate.
   `,
-  quiz:{
-    q:"«Swimming» сөзі қазақша?",
-    choices:["Жүзу","Жүгіру","Шаңғы"],
-    a:0
-  }
+  quiz:[
+  { q:"«Football» қазақша?", choices:["Футбол","Теннис","Жүзу"], a:0 },
+  { q:"«Swimming» сөзінің аудармасы?", choices:["Жүгіру","Жүзу","Шаңғы"], a:1 },
+  { q:"«They play ___ at school.»", choices:["basketball","swim","ski"], a:0 },
+  { q:"«Running» қазақша?", choices:["Жүгіру","Жүзу","Теннис"], a:0 },
+  { q:"«Skiing» қай спорт түрі?", choices:["Шаңғы","Волейбол","Футбол"], a:0 }
+]
+
 }
 
   ]
@@ -942,11 +969,13 @@ May / Might – ықтималдықты білдіреді.
 2) Болымсыз сөйлем құр: “He won’t …”
 3) Мүмкін әрекетті жаз: “We may …”
       `,
-      quiz:{
-        q:"'I think it ___ rain tomorrow.'",
-        choices:["will","do","did"],
-        a:0
-      }
+      quiz:[
+      {q:"I think it ___ rain tomorrow.", choices:["will","do","did"], a:0},
+      {q:"Which is negative future?", choices:["He won’t be late.","He will late.","He no be late."], a:0},
+      {q:"Translate: «Ол дәрігер болады.»", choices:["She will be a doctor.","She is a doctor.","She be doctor."], a:0},
+      {q:"Fill: ‘We ___ go to the cinema.’", choices:["might","must","are"], a:0},
+      {q:"Which shows possibility?", choices:["It may snow tomorrow.","It will snow.","It snows."], a:0}
+    ]
     },
 
     { 
@@ -974,11 +1003,13 @@ Be going to – алдын ала жоспарланған әрекеттер ү
 2) Досыңнан сұра: “Are you going to …?”
 3) Болымсыз сөйлем құр: “He is not going to …”
       `,
-      quiz:{
-        q:"'She ___ visit her aunt next week.' (plan)",
-        choices:["is going to","will","do"],
-        a:0
-      }
+      quiz:[
+          {q:"You already decided to visit grandma. Correct sentence:", choices:["I am going to visit my grandma.","I will visit my grandma.","I visit my grandma."], a:0},
+          {q:"Your friend asks: ‘What ___ you going to do tomorrow?’", choices:["is","are","will"], a:1},
+          {q:"Negative: ‘He ___ going to travel this summer.’", choices:["is not","are not","won’t"], a:0},
+          {q:"Choose correct plan: ‘We ___ play football at the weekend.’", choices:["are going to","will","go"], a:0},
+          {q:"Ask: ‘___ you going to study tonight?’", choices:["Are","Will","Do"], a:0}
+        ]
     },
 
     { 
@@ -1008,11 +1039,13 @@ We/you/they – were
 2) Сұрақ қой: “Were you at school yesterday?”
 3) Болымсыз сөйлем құр: “She wasn’t …”
       `,
-      quiz:{
-        q:"'Where ___ they yesterday?'",
-        choices:["were","was","are"],
-        a:0
-      }
+      quiz:[
+          {q:"Fill: ‘I ___ at school yesterday.’", choices:["was","were","am"], a:0},
+          {q:"Negative: ‘They ___ at home last night.’", choices:["weren’t","wasn’t","aren’t"], a:0},
+          {q:"Question: ‘___ he your teacher?’", choices:["Was","Were","Is"], a:0},
+          {q:"‘Where ___ they yesterday?’", choices:["were","was","are"], a:0},
+          {q:"Dialogue: A: ‘___ you tired yesterday?’ B: ‘Yes, I was.’", choices:["Was","Were","Are"], a:0}
+        ]
     },
 
     { 
@@ -1044,11 +1077,13 @@ Irregular adjectives:
 2) Үлкен/кіші заттарды сипатта.
 3) Ең жақсы/жаман нәрсені айт: “This is the best …”
       `,
-      quiz:{
-        q:"'Fast — ___' (comparative)",
-        choices:["faster","fastest","more fast"],
-        a:0
-      }
+      quiz:[
+          {q:"Fast — ___ (comparative)", choices:["faster","fastest","more fast"], a:0},
+          {q:"Good — ___ — the best", choices:["better","gooder","bestest"], a:0},
+          {q:"My house is ___ than yours.", choices:["bigger","biggest","more big"], a:0},
+          {q:"Choose: ‘This is the ___ day of my life.’", choices:["best","better","good"], a:0},
+          {q:"Far — farther — the ___", choices:["farthest","far","most far"], a:0}
+        ]
     },
 
     { 
@@ -1078,11 +1113,13 @@ Present Perfect – өткен шақтағы әрекеттің қазіргі 
 2) “Have you ever …?” сұрақ қой.
 3) Болымсыз сөйлем жаз: “I haven’t …”
       `,
-      quiz:{
-        q:"'They ___ already eaten.' (present perfect)",
-        choices:["have","has","had"],
-        a:0
-      }
+      quiz:[
+          {q:"They ___ already eaten.", choices:["have","has","had"], a:0},
+          {q:"She ___ gone to school.", choices:["has","have","had"], a:0},
+          {q:"Question: ‘___ you ever been to Astana?’", choices:["Have","Has","Did"], a:0},
+          {q:"Negative: ‘I ___ seen this movie.’", choices:["haven’t","hasn’t","don’t"], a:0},
+          {q:"We ___ visited Almaty many times.", choices:["have","has","had"], a:0}
+        ]
     },
 
     { 
@@ -1104,11 +1141,13 @@ First Conditional – болашақтағы мүмкін жағдайларды
 2) Болымсыз түрін жаса: “If …, I won’t …”
 3) Досыңа сұрақ қой: “What will you do if …?”
       `,
-      quiz:{
-        q:"'If you study, you ___ pass.'",
-        choices:["will","would","did"],
-        a:0
-      }
+      quiz:[
+          {q:"If it rains, I ___ stay home.", choices:["will","would","did"], a:0},
+          {q:"‘If you study, you ___ pass the exam.’", choices:["will","would","can"], a:0},
+          {q:"Negative: ‘If she is late, we ___ wait.’", choices:["won’t","will","would"], a:0},
+          {q:"Question: ‘What ___ you do if it rains?’", choices:["will","would","do"], a:0},
+          {q:"Choose: ‘He ___ be happy if he gets a gift.’", choices:["will","would","might"], a:0}
+        ]
     },
 
     { 
@@ -1130,11 +1169,13 @@ Past Continuous – өткен шақта болып жатқан әрекетт
 2) Past Continuous қолдана отырып, 3 сөйлем жаз.
 3) “When” сөзін қолданып сөйлем құр.
       `,
-      quiz:{
-        q:"'He ___ TV when I called.'",
-        choices:["was watching","watched","is watching"],
-        a:0
-      }
+      quiz:[
+          {q:"He ___ TV when I called.", choices:["was watching","watched","is watching"], a:0},
+          {q:"Fill: ‘They ___ football at 5 pm yesterday.’", choices:["were playing","played","are playing"], a:0},
+          {q:"Negative: ‘I ___ sleeping at that time.’", choices:["wasn’t","weren’t","am not"], a:0},
+          {q:"While she ___ cooking, he was watching TV.", choices:["was","were","is"], a:0},
+          {q:"Choose: ‘What ___ you doing yesterday at 7?’", choices:["were","was","are"], a:0}
+        ]
     },
 
     { 
@@ -1164,11 +1205,13 @@ Anyone – кез келген адам немесе ешкім (сұрақ, б�
 2) «Any» сөзін қолдан: “Do you have any …?”
 3) “Someone/anyone” сөздерімен сөйлем жаз.
       `,
-      quiz:{
-        q:"'Is there ___ in the room?'",
-        choices:["anyone","someone","noone"],
-        a:0
-      }
+      quiz:[
+          {q:"Is there ___ in the room?", choices:["anyone","someone","noone"], a:0},
+          {q:"I have ___ apples.", choices:["some","any","none"], a:0},
+          {q:"Negative: ‘I don’t have ___ money.’", choices:["any","some","many"], a:0},
+          {q:"‘___ is knocking at the door.’", choices:["Someone","Anyone","No one"], a:0},
+          {q:"Question: ‘Did you see ___ in the park?’", choices:["anyone","someone","everyone"], a:0}
+        ]
     },
 
     { 
@@ -1194,11 +1237,13 @@ Active vs Passive:
 2) Мектептегі әрекетті сипатта: “The lessons are taught …”
 3) Өз ойыңнан мысал жаз: “Books are …”
       `,
-      quiz:{
-        q:"'A book ___ on the table.' (present passive)",
-        choices:["is placed","places","placed"],
-        a:0
-      }
+      quiz:[
+          {q:"A book ___ on the table. (passive)", choices:["is placed","places","placed"], a:0},
+          {q:"English ___ spoken in many countries.", choices:["is","are","be"], a:0},
+          {q:"Homework ___ done by students.", choices:["is","are","do"], a:0},
+          {q:"Passive: ‘The cake ___ made by my mother.’", choices:["is","are","was"], a:0},
+          {q:"Transform: ‘People clean the room.’ → ‘The room ___ cleaned.’", choices:["is","are","be"], a:0}
+        ]
     },
     { 
   id:"6-10", 
@@ -1216,11 +1261,13 @@ Mustn’t – тыйым салынған әрекеттер үшін қолда
 
 Яғни must – «жасау керек», mustn’t – «жасауға болмайды».
       `,
-  quiz:{
-    q:"«You ___ smoke here. It’s forbidden.»",
-    choices:["must","mustn’t","should"],
-    a:1
-  }
+      quiz:[
+          {q:"You ___ wear a seatbelt in the car.", choices:["must","mustn’t","should"], a:0},
+          {q:"People ___ litter in the park. (forbidden)", choices:["mustn’t","must","should"], a:0},
+          {q:"We ___ do our homework every day.", choices:["must","should","may"], a:0},
+          {q:"You ___ run in the classroom.", choices:["mustn’t","must","can"], a:0},
+          {q:"Fill: ‘Students ___ respect the teacher.’", choices:["must","may","can"], a:0}
+        ]
 },
 
 { 
@@ -1239,11 +1286,13 @@ Shouldn’t – кеңес ретінде жасамау керек әрекет
 
 Яғни should – «жасағаның дұрыс», shouldn’t – «жасамағаның дұрыс».
       `,
-  quiz:{
-    q:"«You ___ eat too much fast food. It’s unhealthy.»",
-    choices:["should","shouldn’t","must"],
-    a:1
-  }
+      quiz:[
+          {q:"You ___ eat more vegetables.", choices:["should","shouldn’t","mustn’t"], a:0},
+          {q:"You ___ watch too much TV. (advice negative)", choices:["shouldn’t","must","should"], a:0},
+          {q:"They ___ be late for school.", choices:["shouldn’t","should","mustn’t"], a:0},
+          {q:"We ___ listen to the teacher.", choices:["should","must","may"], a:0},
+          {q:"Choose: ‘You ___ drink more water every day.’", choices:["should","shouldn’t","mustn’t"], a:0}
+        ]
 },
 
 { 
@@ -1264,11 +1313,13 @@ Action verbs – іс-қимылды білдіретін сөздер. Олар
 
 Бұл сөздерді білгенде сен сөйлемдерде әрекеттерді еркін сипаттай аласың.
       `,
-  quiz:{
-    q:"«Ол қазір ән айтып жатыр» ағылшынша қалай болады?",
-    choices:["She sings a song.","She is singing a song.","She will sing a song."],
-    a:1
-  }
+      quiz:[
+          {q:"Ол қазір ән айтып жатыр → ?", choices:["She is singing a song.","She sings a song.","She will sing a song."], a:0},
+          {q:"‘They ___ football at school every day.’", choices:["play","plays","played"], a:0},
+          {q:"Negative: ‘I ___ swimming now.’", choices:["am not","don’t","wasn’t"], a:0},
+          {q:"Translate: ‘Мен таңертең жүгіремін.’", choices:["I run in the morning.","I running in the morning.","I am run in the morning."], a:0},
+          {q:"Fill: ‘He ___ a book now.’", choices:["is reading","reads","read"], a:0}
+        ]
 },
 
 { 
@@ -1291,11 +1342,13 @@ Negative (болымсыз):
 
 Were not → weren’t, was not → wasn’t деп қысқаша айтылады.  
       `,
-  quiz:{
-    q:"«I ___ watching TV at 7 pm yesterday.»",
-    choices:["was","were","am"],
-    a:0
-  }
+      quiz:[
+          {q:"I ___ watching TV at 7 pm yesterday.", choices:["was","were","am"], a:0},
+          {q:"They ___ playing football when it rained.", choices:["were","was","are"], a:0},
+          {q:"Negative: ‘She ___ studying yesterday evening.’", choices:["wasn’t","weren’t","isn’t"], a:0},
+          {q:"Question: ‘___ you reading a book yesterday?’", choices:["Were","Was","Are"], a:0},
+          {q:"While I ___ reading, my brother was playing.", choices:["was","were","am"], a:0}
+        ]
 },
 
 { 
@@ -1317,11 +1370,13 @@ Past Continuous – өткен шақтағы белгілі бір уақытт
 
 Яғни Past Simple – қысқа, аяқталған іс. Past Continuous – ұзақ болып жатқан іс.  
       `,
-  quiz:{
-    q:"«I ___ (read) a book when the phone rang.»",
-    choices:["was reading","read","am reading"],
-    a:0
-  }
+      quiz:[
+          {q:"I ___ a book when the phone rang.", choices:["was reading","read","am reading"], a:0},
+          {q:"She ___ cooking when the lights went out.", choices:["was","were","is"], a:0},
+          {q:"While I ___ reading, he was playing.", choices:["was","were","am"], a:0},
+          {q:"Yesterday I ___ TV. (finished action)", choices:["watched","was watching","watch"], a:0},
+          {q:"Question: ‘What ___ you doing when he called?’", choices:["were","was","did"], a:0}
+        ]
 },
 
 { 
@@ -1349,11 +1404,13 @@ B: Yes, of course. (Әрине)
 
 Бұл тақырып арқылы оқушылар дүкенде сөйлесуді үйренеді.  
       `,
-  quiz:{
-    q:"«Excuse me, how much is this book?» деген сұраққа дұрыс жауап қайсы?",
-    choices:["It is red.","It is 2000 tenge.","It is mine."],
-    a:1
-  }
+      quiz:[
+          {q:"Excuse me, how much is this book? Correct answer:", choices:["It is 2000 tenge.","It is red.","It is mine."], a:0},
+          {q:"Customer: ‘Can I pay by card?’ Shop assistant correct answer:", choices:["Yes, of course.","No, it is red.","I am hungry."], a:0},
+          {q:"Dialogue: ‘Can I try it on?’ – ?", choices:["Yes, of course.","It is 3000 tenge.","No, it isn’t."], a:0},
+          {q:"Fill: ‘I’d like to ___ a T-shirt.’", choices:["buy","play","eat"], a:0},
+          {q:"Translate: ‘Баға қымбат.’", choices:["The price is expensive.","The price is cheap.","The price is big."], a:0}
+        ]
 }
   ]
 },
@@ -1380,11 +1437,13 @@ B: Yes, of course. (Әрине)
 
 Бұл құрылымдар балаларға өз жоспарларын ағылшынша нақты жеткізуге көмектеседі.
       `,
-      quiz:{
-        q:"«I ___ visit my grandparents this weekend.» (алдын ала жоспар)",
-        choices:["am going to","will","am"],
-        a:0
-      }
+      quiz:[
+          {q:"Choose correct: ‘I ___ visit my grandparents this weekend.’ (planned)", choices:["am going to","will","am"], a:0},
+          {q:"You decide just now: ‘I think I ___ watch a movie tonight.’", choices:["will","am going to","am"], a:0},
+          {q:"Fill: ‘We ___ meeting our friends tomorrow.’ (fixed plan)", choices:["are","will","were"], a:0},
+          {q:"Dialogue: A: ‘What are you going to do on holiday?’ – B: ‘I ___ play football with my friends.’", choices:["am going to","will","was"], a:0},
+          {q:"Decide: Which is correct future form? ‘Look at the clouds! It ___ rain.’", choices:["is going to","will","is"], a:0}
+        ]
     },
 
     { 
@@ -1403,11 +1462,13 @@ Communication – адамдар арасындағы байланыс. Бұры
 
 Бұл тақырып оқушыларды шынайы өмірде де, интернетте де дұрыс сөйлесуге үйретеді.
       `,
-      quiz:{
-        q:"«I ___ my friend yesterday.»",
-        choices:["called","calling","call"],
-        a:0
-      }
+      quiz:[
+          {q:"‘I ___ my friend yesterday.’", choices:["called","calling","call"], a:0},
+          {q:"Choose: ‘We usually ___ emails to our teacher.’", choices:["send","sending","sends"], a:0},
+          {q:"Fill polite request: ‘___ you help me, please?’", choices:["Could","Do","Will"], a:0},
+          {q:"Dialogue: ‘Thank you for your message.’ – Correct reply?", choices:["You’re welcome.","Good morning.","How are you?"], a:0},
+          {q:"Translate: ‘Мен кеше досыма хабарлама жаздым.’", choices:["I texted my friend yesterday.","I am texting my friend.","I have text my friend."], a:0}
+        ]
     },
 
     { 
@@ -1424,11 +1485,13 @@ Communication – адамдар арасындағы байланыс. Бұры
 
 Бұл сабақта оқушылар әр тілдің артықшылығын талқылап, қай тілді үйрену пайдалы екенін пікірталас арқылы айта алады.
       `,
-      quiz:{
-        q:"«English is the ___ language of communication.»",
-        choices:["global","small","local"],
-        a:0
-      }
+      quiz:[
+          {q:"Fill: ‘English is the ___ language of communication.’", choices:["global","small","local"], a:0},
+          {q:"Choose correct: ‘Many people believe Chinese ___ important in the future.’", choices:["will be","is being","was"], a:0},
+          {q:"Translate: ‘Мен болашақта испан тілін үйренгім келеді.’", choices:["I want to learn Spanish in the future.","I wanted learn Spanish.","I will learning Spanish."], a:0},
+          {q:"Question: ‘Which language do you think ___ more popular in 2050?’", choices:["will be","is","was"], a:0},
+          {q:"Complete: ‘Knowing languages helps you ___ new friends and jobs.’", choices:["find","finding","found"], a:0}
+        ]
     },
 
     { 
@@ -1447,11 +1510,13 @@ Still – әлі де жалғасып жатқан әрекетті білді�
 
 Бұл сөздерді қолдану арқылы сөйлемдер дәлірек болады.
       `,
-      quiz:{
-        q:"«I haven’t done my homework ___.»",
-        choices:["already","yet","still"],
-        a:1
-      }
+      quiz:[
+          {q:"Fill: ‘I haven’t done my homework ___.’", choices:["already","yet","still"], a:1},
+          {q:"Correct: ‘She has ___ finished her project.’", choices:["already","yet","still"], a:0},
+          {q:"Choose: ‘Are you ___ waiting for the bus?’", choices:["still","yet","already"], a:0},
+          {q:"Translate: ‘Мен бұл фильмді әлі көрген жоқпын.’", choices:["I haven’t seen this film yet.","I already saw this film.","I still see this film."], a:0},
+          {q:"Fill: ‘He is ___ studying for the exam.’", choices:["still","yet","already"], a:0}
+        ]
     },
 
     { 
@@ -1470,11 +1535,13 @@ Present Continuous – нақты белгіленген жоспар үшін: 
 
 Бұл айырмашылықтарды білу оқушыға ойын анық жеткізуге көмектеседі.
       `,
-      quiz:{
-        q:"«She ___ visit her aunt next week.»",
-        choices:["is going to","will","is"],
-        a:0
-      }
+      quiz:[
+          {q:"Fill: ‘She ___ visit her aunt next week.’", choices:["is going to","will","is"], a:0},
+          {q:"Choose correct: ‘I think it ___ rain tomorrow.’", choices:["will","is going to","was"], a:0},
+          {q:"Fill: ‘We ___ meeting our teacher at 4 pm.’", choices:["are","will","were"], a:0},
+          {q:"Dialogue: A: ‘What are you going to do tomorrow?’ – B: ‘I ___ play tennis.’", choices:["am going to","will","am"], a:0},
+          {q:"Decide: ‘Look at those dark clouds! It ___ rain soon.’", choices:["is going to","will","is"], a:0}
+        ]
     },
 
     { 
@@ -1491,11 +1558,13 @@ Since – белгілі бір уақыт нүктесін білдіреді: 
 
 Айырмашылық: for – қанша уақыт, since – қашаннан бастап.  
       `,
-      quiz:{
-        q:"«I have lived in Astana ___ 2015.»",
-        choices:["for","since","from"],
-        a:1
-      }
+      quiz:[
+          {q:"Fill: ‘I have lived in Astana ___ 2015.’", choices:["for","since","from"], a:1},
+          {q:"Correct: ‘She has studied English ___ three years.’", choices:["for","since","from"], a:0},
+          {q:"Translate: ‘Мен сені 2018 жылдан бері білемін.’", choices:["I have known you since 2018.","I know you for 2018.","I knew you since 2018."], a:0},
+          {q:"Fill: ‘We have worked here ___ a long time.’", choices:["for","since","from"], a:0},
+          {q:"Choose: ‘He has played football ___ he was a child.’", choices:["since","for","from"], a:0}
+        ]
     },
 
     { 
@@ -1510,11 +1579,13 @@ Never – «ешқашан» дегенді білдіреді, болымсыз
 
 Бұл сөздер тәжірибелер туралы сөйлесуді жеңілдетеді.  
       `,
-      quiz:{
-        q:"«Have you ___ seen a tiger?»",
-        choices:["ever","never","yet"],
-        a:0
-      }
+      quiz:[
+          {q:"Fill: ‘Have you ___ seen a tiger?’", choices:["ever","never","yet"], a:0},
+          {q:"Correct: ‘I have ___ eaten sushi. (ешқашан)’", choices:["never","ever","yet"], a:0},
+          {q:"Dialogue: A: ‘___ you ever visited Almaty?’ – B: ‘Yes, twice.’", choices:["Have","Did","Do"], a:0},
+          {q:"Translate: ‘Мен ешқашан Лондонға барып көрген жоқпын.’", choices:["I have never been to London.","I never was in London.","I didn’t go to London."], a:0},
+          {q:"Choose: ‘Have you ___ tried horse meat?’", choices:["ever","never","yet"], a:0}
+        ]
     },
 
     { 
@@ -1529,11 +1600,13 @@ Past Continuous – белгілі бір уақытта жалғасып жат
 
 Past Simple – қысқа іс-әрекетті, ал Past Continuous – ұзақ әрекетті көрсетеді.  
       `,
-      quiz:{
-        q:"«I ___ dinner when my mom came.»",
-        choices:["was having","had","have"],
-        a:0
-      }
+      quiz:[
+          {q:"Fill: ‘I ___ dinner when my mom came.’", choices:["was having","had","have"], a:0},
+          {q:"Choose: ‘He ___ TV yesterday evening.’ (finished action)", choices:["watched","was watching","watches"], a:0},
+          {q:"Fill: ‘They ___ football when it started to rain.’", choices:["were playing","played","are playing"], a:0},
+          {q:"Translate: ‘Мен кітап оқып отырғанмын, сол кезде телефон шырылдады.’", choices:["I was reading a book when the phone rang.","I read a book when the phone was ringing.","I am reading a book when the phone rang."], a:0},
+          {q:"Dialogue: A: ‘What were you doing yesterday at 6 pm?’ – Correct answer?", choices:["I was studying.","I study.","I studied always."], a:0}
+        ]
     },
 
     { 
@@ -1549,11 +1622,13 @@ Second Conditional – қиялдағы немесе мүмкін емес жа�
 
 Бұл сөйлемдер армандар мен қиялды сипаттау үшін өте қолайлы.  
       `,
-      quiz:{
-        q:"«If I ___ a bird, I would fly.»",
-        choices:["was","am","will be"],
-        a:0
-      }
+      quiz:[
+          {q:"Fill: ‘If I ___ a bird, I would fly.’", choices:["was","am","will be"], a:0},
+          {q:"Correct: ‘If she studied harder, she ___ pass the exam.’", choices:["would","will","can"], a:0},
+          {q:"Translate: ‘Егер мен бай болсам, әлемді аралар едім.’", choices:["If I were rich, I would travel the world.","If I am rich, I will travel the world.","If I was rich, I travel the world."], a:0},
+          {q:"Dialogue: A: ‘What would you do if you had a million dollars?’ – Best answer?", choices:["I would buy a big house.","I will buy a big house.","I buy a big house."], a:0},
+          {q:"Fill: ‘If they ___ here, we would be happy.’", choices:["were","are","will be"], a:0}
+        ]
     }
 
   ]
@@ -1582,7 +1657,13 @@ Second Conditional – қиялдағы немесе мүмкін емес жа�
 
 Бұл құрылымдар арқылы балалар өткен өмірін қызықты әңгімелеп үйренеді.
       `,
-      quiz:{q:"I ___ play outside every evening when I was a child.",choices:["used to","use to","will"],a:0}
+      quiz:[
+          {q:"I ___ play outside every evening when I was a child.",choices:["used to","use to","will"],a:0},
+          {q:"Which is correct? ‘He ___ not like tea when he was young.’",choices:["didn’t use to","doesn’t used to","wasn’t use to"],a:0},
+          {q:"Choose: ‘We ___ sit by the fire and tell stories.’",choices:["would","used to","could"],a:0},
+          {q:"Translate: ‘Мен бұрын ауылда тұратынмын.’",choices:["I used to live in the village.","I live in the village.","I would living in the village."],a:0},
+          {q:"Question form: ‘___ you use to go to the park?’",choices:["Did","Do","Are"],a:0}
+        ]
     },
 
     {
@@ -1603,8 +1684,13 @@ Non-defining clause – қосымша ақпарат береді: My father, w
 
 Бұл ереже арқылы сөйлемдер бай және нақты болады.
       `,
-      quiz:{q:"The house ___ Jack built is small.",choices:["who","which","that"],a:2}
-    },
+      quiz:[
+          {q:"The house ___ Jack built is small.",choices:["who","which","that"],a:2},
+          {q:"She is the girl ___ brother is a doctor.",choices:["whose","who","that"],a:0},
+          {q:"This is the book ___ I bought yesterday.",choices:["which","who","where"],a:0},
+          {q:"Correct sentence: ‘The city ___ I was born is beautiful.’",choices:["where","which","whose"],a:0},
+          {q:"Non-defining clause: ‘My father, ___ is a teacher, loves gardening.’",choices:["who","whose","that"],a:0}
+        ]},
 
     {
       id:"8-3",
@@ -1623,8 +1709,13 @@ Review жазу – маңызды дағды: The film has great acting but a w
 
 Бұл бөлім балалардың мәдениет пен ақпаратты түсіну қабілетін дамытады.
       `,
-      quiz:{q:"Which word means 'интернетте әсер етуші тұлға'?",choices:["actor","influencer","audience"],a:1}
-    },
+      quiz:[
+          {q:"Which word means 'интернетте әсер етуші тұлға'?",choices:["actor","influencer","audience"],a:1},
+          {q:"Translate: ‘Мен жаңа эпизод көрдім.’",choices:["I watched a new episode.","I watch a new episode.","I am watch new episode."],a:0},
+          {q:"What do you call people who watch a show?",choices:["audience","review","actor"],a:0},
+          {q:"Choose: ‘The film has great acting but a weak ___.’",choices:["story","audience","review"],a:0},
+          {q:"Streaming means:",choices:["watching online","writing reviews","reading books"],a:0}
+        ] },
 
     {
       id:"8-4",
@@ -1643,8 +1734,13 @@ Transport: bus, train, plane, car, bicycle.
 
 Бұл сөздік шынайы саяхатта да пайдалы.
       `,
-      quiz:{q:"What do you need to travel abroad?",choices:["passport","pencil","book"],a:0}
-    },
+      quiz:[
+          {q:"What do you need to travel abroad?",choices:["passport","pencil","book"],a:0},
+          {q:"Translate: ‘Менің рейсім кешікті.’",choices:["My flight was delayed.","My train delay.","I delayed flight."],a:0},
+          {q:"Which word means ‘жүк, чемодан’?",choices:["luggage","ticket","trip"],a:0},
+          {q:"Choose: ‘We waited at the ___ for the train.’",choices:["platform","passport","car"],a:0},
+          {q:"Difference: trip vs journey – which is longer?",choices:["journey","trip","both same"],a:0}
+        ] },
 
     {
       id:"8-5",
@@ -1662,8 +1758,13 @@ Expired food – мерзімі өткен өнімдер зиян.
 
 Бұл сабақта қауіпсіз тамақтанудың ережелері үйретіледі.
       `,
-      quiz:{q:"Which food can cause allergy?",choices:["nuts","water","rice"],a:0}
-    },
+      quiz:[
+          {q:"Which food can cause allergy?",choices:["nuts","water","rice"],a:0},
+          {q:"Translate: ‘Мен теңіз өнімдеріне аллергиям бар.’",choices:["I am allergic to seafood.","I allergic seafood.","I have seafood."],a:0},
+          {q:"Expired food means:",choices:["мерзімі өткен","дәмді","қымбат"],a:0},
+          {q:"Food poisoning happens when:",choices:["you eat spoiled food","you drink water","you eat salad"],a:0},
+          {q:"Choose safe habit:",choices:["Wash hands before eating.","Eat expired food.","Ignore smell."],a:0}
+        ] },
 
     {
       id:"8-6",
@@ -1680,8 +1781,13 @@ Used to – өткен әдеттерді айту үшін ең ыңғайлы 
 
 Балалар осы құрылымды қолданып, өздерінің естеліктерін еркін айта алады.
       `,
-      quiz:{q:"___ you use to play outside?",choices:["Did","Do","Are"],a:0}
-    },
+      quiz:[
+          {q:"___ you use to play outside?",choices:["Did","Do","Are"],a:0},
+          {q:"Choose correct: ‘I ___ go swimming when I was younger.’",choices:["used to","use to","would to"],a:0},
+          {q:"Negative: ‘I ___ use to like vegetables.’",choices:["didn’t","don’t","wasn’t"],a:0},
+          {q:"Translate: ‘Сен бұрын футбол ойнаушы ма едің?’",choices:["Did you use to play football?","Do you used play football?","Are you used to play football?"],a:0},
+          {q:"Which shows habit in past?",choices:["used to","must","will"],a:0}
+        ] },
 
     {
       id:"8-7",
@@ -1697,8 +1803,13 @@ If I had a car, I would drive to school.
 
 Бұл сөйлемдер арман мен мүмкіндікті сипаттайды.
       `,
-      quiz:{q:"If I had more time, I ___ learn guitar.",choices:["could","will","must"],a:0}
-    },
+      quiz:[
+          {q:"If I had more time, I ___ learn guitar.",choices:["could","will","must"],a:0},
+          {q:"Translate: ‘Егер мен көп оқысам, мен оңай тапсырар едім.’",choices:["If I studied more, I could pass easily.","If I study more, I can pass.","If I study more, I might passed."],a:0},
+          {q:"Choose: ‘If it stopped raining, we ___ go out.’",choices:["might","must","will"],a:0},
+          {q:"Fill: ‘If she tried harder, she ___ win.’",choices:["could","can","must"],a:0},
+          {q:"Which is NOT second conditional?",choices:["If I had money, I would travel.","If it rains, I will stay home.","If I were rich, I might buy a car."],a:1}
+        ] },
 
     {
       id:"8-8",
@@ -1716,8 +1827,13 @@ Ought to – should-қа ұқсас.
 
 Модальдық етістіктер оқушының сөйлеуін байытады.
       `,
-      quiz:{q:"Which modal shows obligation?",choices:["may","should","must"],a:2}
-    },
+      quiz:[
+          {q:"Which modal shows obligation?",choices:["may","should","must"],a:2},
+          {q:"Translate: ‘Сен дəрігерге баруың керек.’",choices:["You should see a doctor.","You must doctor.","You may see doctor."],a:0},
+          {q:"Choose: ‘You ___ wear a helmet on a bike.’",choices:["must","can","may"],a:0},
+          {q:"Fill: ‘It ___ rain tomorrow, take an umbrella.’",choices:["might","must","can"],a:0},
+          {q:"Which modal means advice?",choices:["should","must","can"],a:0}
+        ]},
 
     {
       id:"8-9",
@@ -1736,8 +1852,13 @@ He walked into the room.
 
 Предлогтарды дұрыс қолдану сөйлеуді нақты етеді.
       `,
-      quiz:{q:"She arrived ___ Monday.",choices:["in","on","at"],a:1}
-    },
+      quiz:[
+          {q:"She arrived ___ Monday.",choices:["in","on","at"],a:1},
+          {q:"Fill: ‘The book is ___ the table.’",choices:["on","in","at"],a:0},
+          {q:"Translate: ‘Ол 2010 жылдан бері тұрады.’ → He has lived here ___ 2010.",choices:["since","for","at"],a:0},
+          {q:"Choose: ‘He walked ___ the room.’",choices:["into","on","in"],a:0},
+          {q:"Correct: ‘We met ___ the morning.’",choices:["in","on","at"],a:0}
+        ] },
 
     {
       id:"8-10",
@@ -1755,8 +1876,13 @@ Do you know when the lesson starts?
 
 Бұл тақырып сыпайы қарым-қатынас жасауға үйретеді.
       `,
-      quiz:{q:"Indirect: 'Where is the station?' → Could you tell me ___?",choices:["where the station is","where is the station"],a:0}
-    }
+      quiz:[
+          {q:"Indirect: 'Where is the station?' → Could you tell me ___?",choices:["where the station is","where is the station"],a:0},
+          {q:"Choose: ‘Do you know when the lesson ___?’",choices:["starts","does start","is starts"],a:0},
+          {q:"Translate politely: ‘Сізге дүкен қайда екенін айта аласыз ба?’",choices:["Could you tell me where the shop is?","Where is shop?","Tell me shop."],a:0},
+          {q:"Correct indirect: ‘Can you tell me how old ___?’",choices:["she is","is she","she"],a:0},
+          {q:"Which is more polite?",choices:["Could you tell me what time it is?","What time it is?","Tell me the time!"],a:0}
+        ] }
 
   ]
 },
@@ -1791,11 +1917,13 @@ Do you know when the lesson starts?
 
 Бұл тақырып оқушыларға заттар мен адамдарды салыстыруды үйретіп қана қоймай, жазу мен сөйлеу тілін байытады.
       `,
-      quiz:{
-        q:"«She runs ___ than her brother.»",
-        choices:["faster","fastest","more fast"],
-        a:0
-      }
+      quiz:[
+      {q:"She runs ___ than her brother.",choices:["faster","fastest","more fast"],a:0},
+      {q:"Translate: ‘Бұл кітап ана кітаптан қызығырақ.’",choices:["This book is more interesting than that one.","This book is the most interesting.","That book is more interesting."],a:0},
+      {q:"Which is correct?",choices:["He is the tallest boy.","He is taller the boy.","He tall than boy."],a:0},
+      {q:"Fill: ‘This is the ___ exam I’ve ever taken.’",choices:["most difficult","more difficult","difficultest"],a:0},
+      {q:"Adverb: ‘He speaks ___ than his brother.’",choices:["more fluently","fluenter","most fluently"],a:0}
+    ]
     },
 
     {
@@ -1818,11 +1946,13 @@ Do you know when the lesson starts?
 
 Бұл үш форма арқылы біз қабілеттілікті әр уақытта нақты айта аламыз. Мысалы, бүгін бір әрекетті жасай аламыз ба, бұрын жасай алдық па, әлде болашақта жасаймыз ба – осыны дұрыс жеткізуді үйренеміз. Бұл күнделікті өмірде де, емтихандарда да жиі қолданылады.
       `,
-      quiz:{
-        q:"«When I was a child, I ___ run very fast.»",
-        choices:["could","can","will be able to"],
-        a:0
-      }
+      quiz:[
+          {q:"When I was a child, I ___ run very fast.",choices:["could","can","will be able to"],a:0},
+          {q:"Choose the correct: ‘She ___ speak French very well.’",choices:["can","could","will"],a:0},
+          {q:"Future: ‘One day you ___ travel alone.’",choices:["will be able to","can","could"],a:0},
+          {q:"Translate: ‘Мен бала кезімде жүзуді білетінмін.’",choices:["I could swim when I was a child.","I can swim when I was a child.","I will be able to swim when I was a child."],a:0},
+          {q:"Which is ability in present?",choices:["I can drive.","I could drive.","I will be able to drive."],a:0}
+        ]
     },
 
     {
@@ -1848,11 +1978,13 @@ Do you know when the lesson starts?
 
 Осылайша, бұл модальдар арқылы біз болжам жасаймыз, сенімділік деңгейін көрсетеміз және әңгімемізді нақтыландырамыз.
       `,
-      quiz:{
-        q:"«He ___ be at school now. It’s too late.»",
-        choices:["can’t","must","may"],
-        a:0
-      }
+      quiz:[
+          {q:"He ___ be at school now. It’s too late.",choices:["can’t","must","may"],a:0},
+          {q:"It looks cloudy. It ___ rain soon.",choices:["may","must","can’t"],a:0},
+          {q:"Translate: ‘Бұл оның машинасы болуы керек.’",choices:["This must be his car.","This may be his car.","This can’t be his car."],a:0},
+          {q:"She ___ be at home. The lights are on.",choices:["must","may","can’t"],a:0},
+          {q:"Which shows impossibility?",choices:["can’t","must","may"],a:0}
+        ]
     },
 
     {
@@ -1877,11 +2009,13 @@ Do you know when the lesson starts?
 
 Бұл формалар оқушыларға өткен оқиғалар туралы нақты болжам жасауды үйретеді.
       `,
-      quiz:{
-        q:"«She ___ have left her phone at home.»",
-        choices:["must","must have","could"],
-        a:1
-      }
+      quiz:[
+          {q:"She ___ have left her phone at home.",choices:["must","must have","could"],a:1},
+          {q:"Translate: ‘Ол автобусты өткізіп алған шығар.’",choices:["He might have missed the bus.","He must have missed the bus.","He can’t have missed the bus."],a:0},
+          {q:"Which shows impossibility in past?",choices:["He can’t have done it.","He must have done it.","He might have done it."],a:0},
+          {q:"Fill: ‘You ___ have studied harder.’",choices:["should","should have","must"],a:1},
+          {q:"She looks happy. She ___ have passed the exam.",choices:["must","must have","might"],a:1}
+        ]
     },
 
     {
@@ -1899,11 +2033,13 @@ Morals – адамның дұрыс пен бұрысты ажыратуына 
 
 Мораль тақырыбы оқушыларды тек грамматиканы ғана емес, өмірлік құндылықтарды талқылауға да үйретеді. Олар «дұрыс» және «бұрыс» әрекеттерді талқылай отырып, ағылшын тілінде өз пікірін еркін жеткізуге дағдыланады. Бұл тек тіл үйрену ғана емес, тұлғалық дамуға да әсер етеді.
       `,
-      quiz:{
-        q:"«You ___ always respect your teachers.»",
-        choices:["must","can","might"],
-        a:0
-      }
+      quiz:[
+          {q:"You ___ always respect your teachers.",choices:["must","can","might"],a:0},
+          {q:"Which shows advice?",choices:["You should tell the truth.","You must tell the truth.","You can tell the truth."],a:0},
+          {q:"Translate: ‘Біз ата-анамызды құрметтеуіміз керек.’",choices:["We must respect our parents.","We should respect our parents.","We can respect our parents."],a:0},
+          {q:"Fill: ‘You ___ hurt other people.’",choices:["shouldn’t","must","can"],a:0},
+          {q:"Which is moral value?",choices:["Always be honest.","Always be rich.","Always be late."],a:0}
+        ]
     },
 
     {
@@ -1922,11 +2058,13 @@ Causative form – біреуге белгілі бір әрекетті жас�
 
 Causative form күнделікті өмірде жиі қолданылады: киім тіктіру, үйді жөндету, машинаны жуудырып алу. Бұл оқушыларға ағылшынша нақты жағдайларды жеткізуге көмектеседі.
       `,
-      quiz:{
-        q:"«I ___ my car washed yesterday.»",
-        choices:["had","made","did"],
-        a:0
-      }
+      quiz:[
+          {q:"I ___ my car washed yesterday.",choices:["had","made","did"],a:0},
+          {q:"She ___ her phone repaired.",choices:["got","did","made"],a:0},
+          {q:"Translate: ‘Мен кеше шашымды қидырдым.’",choices:["I had my hair cut yesterday.","I cut my hair yesterday.","I got cut my hair yesterday."],a:0},
+          {q:"Which is correct causative?",choices:["She had her dress made.","She made her dress had.","She did her dress made."],a:0},
+          {q:"Fill: ‘We ___ our house painted last month.’",choices:["had","did","got"],a:0}
+        ]
     },
 
     {
@@ -1951,11 +2089,13 @@ Modal verbs қарым-қатынаста сыпайылық таныту үші
 
 Бұл құрылымдар сыпайы сөйлесуді үйретеді және шынайы өмірде жиі қолданылады.
       `,
-      quiz:{
-        q:"«___ I help you with your homework?»",
-        choices:["Shall","May","Do"],
-        a:0
-      }
+      quiz:[
+          {q:"___ I help you with your homework?",choices:["Shall","May","Do"],a:0},
+          {q:"Which is request?",choices:["Could you open the window?","I will open the window.","The window is open."],a:0},
+          {q:"Translate: ‘Біз киноға барсақ қалай?’",choices:["Shall we go to the cinema?","Can we go to the cinema?","We go cinema?"],a:0},
+          {q:"Offer: ‘___ you like some tea?’",choices:["Would","Shall","Do"],a:0},
+          {q:"Fill: ‘I ___ carry your bag.’",choices:["can","shall","must"],a:0}
+        ]
     },
 
     {
@@ -1972,11 +2112,13 @@ Modal verbs қарым-қатынаста сыпайылық таныту үші
 
 Бұл құрылым көбіне өткен немесе қазіргі қиялды білдіреді. Ол оқушыларға ойды ерекше жеткізуге көмектеседі және сөйлемдерін байытады.
       `,
-      quiz:{
-        q:"«But for your advice, I ___ in trouble.»",
-        choices:["would be","am","was"],
-        a:0
-      }
+      quiz:[
+          {q:"But for your advice, I ___ in trouble.",choices:["would be","am","was"],a:0},
+          {q:"Translate: ‘Жаңбыр болмағанда, біз далада ойнадық.’",choices:["But for the rain, we would play outside.","But for the rain, we played outside.","But for the rain, we are playing outside."],a:0},
+          {q:"Which is correct?",choices:["But for his support, she would fail.","But for his support, she fails.","But for his support, she is failing."],a:0},
+          {q:"Fill: ‘But for the traffic, I ___ earlier.’",choices:["would arrive","arrive","arrived"],a:0},
+          {q:"Which structure is similar to But for?",choices:["Second Conditional","Past Simple","Present Continuous"],a:0}
+        ]
     },
 
     {
@@ -1998,11 +2140,13 @@ Gerund көбіне мына сөздерден кейін қолданылад�
 
 Gerund – ағылшын тіліндегі маңызды грамматикалық тақырып. Оқушылар оны үйренсе, ағылшынша еркін сөйлеуде және жазуда қателіктері азаяды.
       `,
-      quiz:{
-        q:"«I enjoy ___ football.»",
-        choices:["playing","play","to play"],
-        a:0
-      }
+      quiz:[
+          {q:"I enjoy ___ football.",choices:["playing","play","to play"],a:0},
+          {q:"Translate: ‘Оқу – менің хоббиім.’",choices:["Reading is my hobby.","Read is my hobby.","To read is hobby."],a:0},
+          {q:"Which verb takes gerund?",choices:["enjoy","want","decide"],a:0},
+          {q:"Fill: ‘She suggested ___ to the park.’",choices:["going","go","to go"],a:0},
+          {q:"Which is correct?",choices:["He is good at dancing.","He is good at dance.","He is good to dance."],a:0}
+        ]
     }
 
   ]
@@ -2088,48 +2232,54 @@ function renderCardsForGrade(g){
 function openLesson(g, lessonId){
   const lesson = curriculum[g].lessons.find(l=>l.id===lessonId);
   if(!lesson) return;
+
   lessonView.style.display = "block";
   lessonTitle.textContent = `${lesson.title} — ${g} сынып`;
   lessonSubtitle.textContent = lesson.subtitle + " • " + lesson.meta;
   lessonContent.innerHTML = `<p>${escapeHtml(lesson.content).replace(/\n/g,"<br>")}</p>`;
   lessonMeta.innerHTML = `<div>Сабақ коды: <strong>${lesson.id}</strong></div>
                           <div style="margin-top:6px" class="small-muted">План: КТП/жоспарға сәйкес</div>`;
-  // quiz
+
+  // ---- QUIZ ----
   quizArea.innerHTML = "";
-  if(lesson.quiz){
-    const qbox = el("div");
-    qbox.innerHTML = `<div style="font-weight:700;margin-bottom:8px">${escapeHtml(lesson.quiz.q)}</div>`;
-    lesson.quiz.choices.forEach((ch, idx)=>{
-      const id = `opt-${g}-${lesson.id}-${idx}`;
-      const wrap = el("label", {style:"display:block;margin-bottom:8px;cursor:pointer"}, `
-        <input type="radio" name="${lesson.id}" id="${id}" value="${idx}" style="margin-right:8px" />
-        ${escapeHtml(ch)}
-      `);
-      qbox.appendChild(wrap);
+  if(lesson.quiz && Array.isArray(lesson.quiz)){
+    lesson.quiz.forEach((qObj, qIndex)=>{
+      const qbox = el("div", {style:"margin-bottom:16px; padding:8px; border:1px solid #ddd; border-radius:6px"});
+      qbox.innerHTML = `<div style="font-weight:700;margin-bottom:8px">${qIndex+1}) ${escapeHtml(qObj.q)}</div>`;
+
+      qObj.choices.forEach((ch, idx)=>{
+        const id = `opt-${g}-${lesson.id}-${qIndex}-${idx}`;
+        const wrap = el("label", {style:"display:block;margin-bottom:6px;cursor:pointer"}, `
+          <input type="radio" name="${lesson.id}-${qIndex}" value="${idx}" style="margin-right:8px" />
+          ${escapeHtml(ch)}
+        `);
+        qbox.appendChild(wrap);
+      });
+
+      const checkBtn = el("button", {class:"btn btn-primary", style:"margin-top:8px"}, "Тексеру");
+      checkBtn.addEventListener("click", ()=>{
+        const selected = document.querySelector(`input[name="${lesson.id}-${qIndex}"]:checked`);
+        if(!selected){ alert("Жауабыңызды таңдаңыз!"); return; }
+        const val = Number(selected.value);
+        if(val === qObj.a){
+          alert("✅ Дұрыс! Тамаша!");
+          markLessonDone(g, lesson.id);
+        } else {
+          alert("❌ Қате. Дұрыс жауап: " + qObj.choices[qObj.a]);
+        }
+      });
+
+      qbox.appendChild(checkBtn);
+      quizArea.appendChild(qbox);
     });
-    const checkBtn = el("button", {class:"btn btn-primary", style:"margin-top:8px"}, "Тексеру");
-    checkBtn.addEventListener("click", ()=>{
-      const selected = document.querySelector(`input[name="${lesson.id}"]:checked`);
-      if(!selected){ alert("Жауабыңызды таңдаңыз!"); return; }
-      const val = Number(selected.value);
-      if(val === lesson.quiz.a){
-        alert("Дұрыс! Тамаша 🎉");
-        // mark as complete automatically
-        markLessonDone(g, lesson.id);
-      } else {
-        alert("Қате. Қайталап көріңіз немесе түсініктемені оқыңыз.");
-      }
-    });
-    qbox.appendChild(checkBtn);
-    quizArea.appendChild(qbox);
   } else {
     quizArea.innerHTML = "<div class='small-muted'>Бұл сабаққа жаттығу әзірленбеген.</div>";
   }
 
-  // mark done button action
   markDoneBtn.onclick = ()=>{ markLessonDone(g, lesson.id); };
-  window.scrollTo({top:0,behavior:"smooth"});
+  lessonView.scrollIntoView({behavior:"smooth"});
 }
+
 
 // mark lesson done
 function markLessonDone(g, lessonId){
